@@ -1,0 +1,60 @@
+.container-fluid .jumbotron {
+    border-radius: 0 !important;
+}
+.navbar {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.divider {
+	width:100%;
+	text-align:center;
+}
+.divider hr {
+	margin-left:auto;
+	margin-right:auto;
+	width:40%;
+}
+.left {
+	float:left;
+}
+.right {
+    float:right;
+}
+.navbar-brand {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+    color: #ffffff !important;
+    text-align: center !important;
+}
+.jumbotron {
+    padding: 2rem;
+}
+#startGame {
+    color: darkgray;
+}
+#jumboPic {
+    width: 100%;
+    height: auto; 
+}
+#qHeadline {
+    font-weight: bold;
+}
+#qGraph {
+    font-style: italic;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+#imgGraph {
+    width: 100%;
+    height: auto; 
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    margin-top: 1rem;
+}
+.invisible {
+    display: none;
+}
+
