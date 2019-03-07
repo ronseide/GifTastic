@@ -3,7 +3,7 @@
 }
 .navbar {
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
 }
 .divider {
 	width:100%;
@@ -28,22 +28,42 @@
 }
 .jumbotron {
     padding: 2rem;
+    background-color: #ffffff;
+}
+@media (min-width: 775px) {
+    #tvBlock {
+        position: absolute;
+        bottom: 0;
+    }
+}
+.figure-img {
+    width: 100%;
+    height: auto; 
+}
+.figure-caption-fluid {
+    padding-bottom: 1rem;
+    text-align: center;
+    font-style: italic;
+    font-size: .90rem;
 }
 #startGame {
     color: darkgray;
 }
-#jumboPic {
+.toonGif {
+    padding: 1rem;
+}
+#buttonColumn {
+    padding-left: 3rem;
+}
+/* #jumboPic {
     width: 100%;
     height: auto; 
-}
-#qHeadline {
-    font-weight: bold;
-}
-#qGraph {
-    font-style: italic;
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
+    vertical-align: bottom;
+    
+} */
+
+
+
 #imgGraph {
     width: 100%;
     height: auto; 
@@ -53,8 +73,5 @@ footer {
     padding: 1rem;
     background-color: #f8f9fa;
     margin-top: 1rem;
-}
-.invisible {
-    display: none;
 }
 

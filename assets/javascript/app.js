@@ -1,13 +1,13 @@
 
 var giphyKey = "kv6Mw2Ll9SuxeytS70UyQpHGIsKzvZot";
-var topics = ["Speed Racer", "Astro Boy", "Wacky Racers", "Rocky and Bullwinkle"];
+var topics = ["Speed Racer", "The Flintstones", "The Jetsons", "Rocky and Bullwinkle"];
 
 var gifData = [];
 
 function displayButtons () {
   $("#buttons").text("");
   for (var i = 0; i < topics.length; i++) {
-    $("#buttons").append('<label><input type="button" name="topics" value="' + topics[i] + '" onclick="clicked(' + i + ');" /> ' + '</label>');
+    $("#buttons").append('<div class="container"><label><input type="button" name="topics" value="' + topics[i] + '" onclick="clicked(' + i + ');" /> ' + '</label></div>');
   }
 };
 function displayGif(num) {

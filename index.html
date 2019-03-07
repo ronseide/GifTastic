@@ -4,33 +4,118 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, height=device-height initial-scale=1, shrink-to-fit=no">
-    <!-- <link rel="stylesheet" href="assets/css/reset.css"> -->
+    <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
-    
+    <link rel="stylesheet" href="assets/css/style.css">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="assets/javascript/app.js"></script>
-    <title>Ron's GifTastic</title>
+    <title>Stuck in the Sixties</title>
 </head>
 
 <body>
     <div class="container-fluid" style="width:90%">
-        <div id="buttons"></div>
-        <div class="gifs">
-            <img src="" id="imgGraph0" onclick="displayGif(0);">
-            <img src="" id="imgGraph1" onclick="displayGif(1);">
-            <img src="" id="imgGraph2" onclick="displayGif(2);">
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <a class="navbar-brand bg-dark" href="#"> Ron Seide</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Stuck in the Sixties</h2>
+                    <h6>The cartoons were the best part</h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-7">
+                    <p>
+                        The 1960’s were a time of turmoil and social unrest with a nation at war, riots and protests and
+                        the coming of age of the baby-boom generation. The revolution, as was said, was televised with
+                        an emerging new world beamed into our living rooms on little more than three channels. But as
+                        a five-year-old, I couldn’t be bothered by the body counts on the nightly news and couldn’t stay
+                        up late for Johnny Carson.
+                    </p>
+                    <p>
+                        No, for a kid, television meant one thing: cartoons on Saturday mornings and weekday afternoons.
+                        In an era of anime, CGI and SpongeBob SquarePants, these classics have faded from the zeitgeist
+                        to the detriment of a new generation. This project, modest though it may be, aims to begin a quest to right this wrong by
+                        opening a window into the past through the magic of gifs.
+                    </p>
+                    <p>
+                        Below, you’ll find buttons that when pressed will display images from cartoon classics of
+                        yore. Click on the images to bring them to life. If there isn’t a button representing a cartoon
+                        you love, you can easily add one by entering the cartoon name in the text box and clicking
+                        “submit”— your button will be every bit the magical portal as are the original buttons. Click <a
+                            href="#gamePosition" id="startGame">here</a> to get started!
+                    </p>
+                    <div class="row">
+                        <div class="divider">
+                            <hr class="left" /><i class="fas fa-tv"></i>
+                            <hr class="right" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
+                    <figure id="tvBlock">
+                        <img id="#jumboPic" src="assets/images/tvSet.jpg" class="figure-img" />
+                        <figcaption class="figure-caption-fluid">When the antenna was on the fritz or the weather was bad, we would stare at the
+                            static for minutes at a time</figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div> <!-- Jumbotron Closes -->
+        <div class="row">
+            <div class="col-md-12">
+            </div>
         </div>
-        <div class="newToon">
-            <form id="form" onsubmit="return false;">
-                <input type="text" id="userInput" />
-                <input type="submit" id="submit" />
-            </form>
+        <div class="row">
+            <div class="col-md-4" id="buttonColumn">
+                <p>Click a button to enter the magical world of cartoons from the sixties.</p>
+                <div id="buttons"></div>
+                <p><br><br><br><br></p>
+                <div class="newToon" class="row">
+                    <p>Enter a cartoon name and click "submit" to add to the adventure.</p>
+                    <form id="form" onsubmit="return false;">
+                        <input type="text" id="userInput" />
+                        <input type="submit" id="submit" />
+                    </form>
+                    <p><br><br><br></p>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="gifs">
+                    <img class="toonGif" src="" id="imgGraph0" onclick="displayGif(0);">
+                    <img class="toonGif" src="" id="imgGraph1" onclick="displayGif(1);">
+                    <img class="toonGif" src="" id="imgGraph2" onclick="displayGif(2);">
+                </div>
+            </div>
         </div>
+        <div class="row">
+            <div class="col-md-12" id="gamePosition">
+                <footer class="sticky-bottom">
+                    <p>Copyright &copy; 2019</p>
+                </footer>
+            </div>
+        </div>
+
     </div>
+    </div> <!-- Container-Fluid Closes -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
