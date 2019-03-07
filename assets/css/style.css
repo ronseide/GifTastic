@@ -1,3 +1,29 @@
+h2 {
+    font-family: 'Roboto Slab', serif; 
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    margin-top: 1rem;
+}
+#startGame {
+    color: darkgray;
+}
+#buttonColumn {
+    padding-left: 3rem;
+}
+
+#imgGraph {
+    width: 100%;
+    height: auto; 
+}
+@media (min-width: 775px) {
+    #tvBlock {
+        position: absolute;
+        bottom: 0;
+    }
+}
 .container-fluid .jumbotron {
     border-radius: 0 !important;
 }
@@ -30,12 +56,6 @@
     padding: 2rem;
     background-color: #ffffff;
 }
-@media (min-width: 775px) {
-    #tvBlock {
-        position: absolute;
-        bottom: 0;
-    }
-}
 .figure-img {
     width: 100%;
     height: auto; 
@@ -46,32 +66,6 @@
     font-style: italic;
     font-size: .90rem;
 }
-#startGame {
-    color: darkgray;
-}
 .toonGif {
     padding: 1rem;
 }
-#buttonColumn {
-    padding-left: 3rem;
-}
-/* #jumboPic {
-    width: 100%;
-    height: auto; 
-    vertical-align: bottom;
-    
-} */
-
-
-
-#imgGraph {
-    width: 100%;
-    height: auto; 
-}
-footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #f8f9fa;
-    margin-top: 1rem;
-}
-
